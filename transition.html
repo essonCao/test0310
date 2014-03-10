@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>css test</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="transition.css" />
+</head>
+
+<body>
+<div class="select">
+    <div class="chosen">
+        成都
+    </div>
+    <ul>
+        <li>上海</li>
+        <li>北京</li>
+        <li>上海</li>
+        <li>北京</li>
+        <li>上海</li>
+        <li>北京</li>
+        <li>上海</li>
+        <li>北京</li>
+    </ul>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".chosen").click(function(){
+            $(".select").toggleClass('open');
+        });
+    });
+</script>
+</body>
+</html>
+
+
